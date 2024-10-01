@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Astrodome</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 36px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
+        .dome-image {
+            flex-basis: calc(33.33% - 20px); /* Three images in one line */
+            margin: 10px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+            overflow: hidden;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .dome-image:nth-child(3n+1) {
+            margin-left: 0; /* Reset margin for the first image in each row */
+        }
+
+        .dome-image:hover {
+            transform: scale(1.05);
+        }
+
+        .dome-image img {
+            width: 100%;
+            height: auto;
+            border: 0;
+            display: block;
+        }
+
+        .dome-image a {
+            display: block;
+            text-align: center;
+            padding: 10px 0;
+            text-decoration: none;
+            color: #333;
+            background: linear-gradient(135deg, #ff5f6d, #ffc371); /* Gradient background */
+            border-radius: 0 0 10px 10px;
+            transition: background 0.3s ease-in-out;
+        }
+
+        .dome-image a:hover {
+            background: linear-gradient(135deg, #ff6f61, #ffcb75); /* Gradient background on hover */
+            color: #fff;
+        }
+
+        .dome-label {
+            font-weight: bold;
+            margin-top: 5px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Astrodome</h1>
+    </header>
+    <div class="container">
+        <div class="dome-image">
+            <a href="2v geodesic cal.html">
+                <img src="images/2vdome.jpg" alt="2v Dome">
+            </a>
+            <div class="dome-label">2v Dome</div>
+        </div>
+        <div class="dome-image">
+            <a href="3v geodesic cal.html">
+                <img src="C:\Users\sreev\OneDrive\Desktop\GEODESIC DOME PROJECT\images\3vdome.jpeg" alt="3v Dome">
+            </a>
+            <div class="dome-label">3v Dome</div>
+        </div>
+        <div class="dome-image">
+            <a href="4v geodesic cal.html">
+                <img src="C:\Users\sreev\OneDrive\Desktop\GEODESIC DOME PROJECT\images\4vdome.jpg" alt="4v Dome">
+            </a>
+            <div class="dome-label">4v Dome</div>
+        </div>
+        <div style="margin-left: 175px;" class="dome-image">
+            <a href="5v geodesic cal.html">
+                <img src="C:\Users\sreev\OneDrive\Desktop\GEODESIC DOME PROJECT\images\5vdome.jpeg" alt="5v Dome">
+            </a>
+            <div class="dome-label">5v Dome</div>
+        </div>
+        <div style="margin-right: 175px;" class="dome-image">
+            <a href="6v geodesic cal.html">
+                <img src="C:\Users\sreev\OneDrive\Desktop\GEODESIC DOME PROJECT\images\6vdome.jpeg" alt="6v Dome">
+            </a>
+            <div class="dome-label">6v Dome</div>
+        </div>
+    </div>
+</body>
+</html>
